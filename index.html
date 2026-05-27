@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure JSON Formatter & Validator - 100% Local</title>
+    <meta name="description" content="Free, secure online JSON formatter and validator. Formats your JSON data locally in your browser so your sensitive data never leaves your machine.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main-wrapper">
+        <div class="container">
+            <h1>Secure JSON Formatter</h1>
+            <p>Paste your JSON below. Processing happens entirely in your browser.</p>
+            
+            <div class="controls">
+                <button id="formatBtn">Format JSON</button>
+                <button id="minifyBtn">Minify JSON</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+
+            <textarea id="jsonInput" placeholder='{"paste": "your JSON here"}'></textarea>
+            
+            <div id="statusMessage" class="status">Waiting for input...</div>
+        </div>
+
+        <article class="seo-content">
+            <h2>Why Use a Local JSON Formatter?</h2>
+            <p>JSON (JavaScript Object Notation) is the backbone of modern web APIs. However, developers frequently handle JSON payloads containing sensitive user data, API keys, or proprietary database structures. Using a standard online JSON formatter can expose this data to third-party servers.</p>
+            
+            <h3>The Privacy Advantage</h3>
+            <p>Our JSON validator and beautifier runs strictly via client-side JavaScript. This means your payload is processed directly on your machine's CPU. We do not store, track, or transmit your data to any backend server. It is the safest way to debug API responses.</p>
+        </article>
+    </main>
+    <script src="script.js"></script>
+    <script data-goatcounter="https://devnovatools-cron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
